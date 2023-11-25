@@ -34,3 +34,6 @@ body{
    gap: 5%;
    margin-bottom: 5%; 
 }
+.progress-section{
+    flex-direction: column;
+}

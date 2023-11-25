@@ -118,50 +118,57 @@
             </div>
         </div>
     </section>
-<section class="d-flex justify-content-center cards-section">
-    <div class="card" style="width: 18rem;">
-        <img src="img/working.jpg" class="card-img-top" alt="ipad">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/banjo.jpg" class="card-img-top" alt="ipad">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-      <section class="d-flex justify-content-center cards-section">
-        <div class="card" style="width: 18rem;">
+    <section class="d-flex flex-wrap justify-content-center cards-section">
+        <div class="card mb-3" style="width: 18rem;">
             <img src="img/working.jpg" class="card-img-top" alt="ipad">
             <div class="card-body">
+                <p class="card-text">A women doing her daily work. Super impressive.</p>
+            </div>
+        </div>
+        <div class="card mb-3" style="width: 18rem;">
+            <img src="img/banjo.jpg" class="card-img-top" alt="ipad">
+            <div class="card-body">
+                <p class="card-text">Just a regular Banjo guy.</p>
+                
+            </div>
+        </div>
+        <div class="card mb-3" style="width: 18rem;">
+            <img src="img/computer.jpg" class="card-img-top" alt="ipad">
+            <div class="card-body">
                 <p class="card-text"></p>
-                <button type="button" class="btn btn-primary m-5">Push Progress Bar</button>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                <div class="d-flex progress-section">
+                    <button type="button" class="btn btn-primary m-5" id="progress-btn">Push it!</button>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                    </div>
                 </div>
             </div>
         </div>
-        </section>
+    </section>
     </section> 
-    
+    <div class="container-sm">
+    <div class="alert alert-success " hidden role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+    <p>Thank you so much for pushing the Progress till the End! Your hard work is now rewarded with the display of this alert box. </p>
+
+        
+        
+      </div>
+    </div>  
+    <div class="card container-sm">
+        <div class="card-header">
+          Super usefull button
+        </div>
+        <div class="card-body ">
+          <h5 class="card-title">You wont believe it.</h5>
+          <p class="card-text">Push this button to wait for 5 seconds. Then you can push the button again!</p>
+          <a href="#" class="btn btn-primary" id="delay-button">Push me!</a>
+        </div>
+      </div>
     <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var button = document.querySelector('.btn-primary');
-            var progressBar = document.querySelector('.progress-bar');
-
-            button.addEventListener('click', function() {
-                var currentProgress = parseInt(progressBar.style.width) || 0;
-                var newProgress = currentProgress + 10;
-                newProgress = Math.min(newProgress, 100);
-                progressBar.style.width = newProgress + '%';
-                progressBar.innerHTML = newProgress + '%';
-            });
-        });
-    </script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>   
+    <script src="./script.js"></script>
+  
 </body>
 </html>
