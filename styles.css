@@ -1,0 +1,36 @@
+/* styles.css */
+
+html,
+body{
+    height:100%
+}
+
+/* Cover */
+
+#cover {
+    background: #222 url('img/stars.jpg') center center no-repeat;
+    background-size: cover;
+    color:white;
+    height:100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+#cover-caption{
+    width:100%
+}
+.first-form{
+    gap:10px;
+}
+.scroll-button{
+    border:white solid 1px;
+    color:white;
+    font-size: 30px;
+    padding: 3px 15px;
+}
+
+.cards-section{
+   gap: 5%;
+   margin-bottom: 5%; 
+}
