@@ -6,7 +6,8 @@ body{
 }
 
 /* Cover */
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*, *:before, *:after {box-sizing:border-box;}
 #cover {
     background: #222 url('img/stars.jpg') center center no-repeat;
     background-size: cover;
@@ -37,3 +38,20 @@ body{
 .progress-section{
     flex-direction: column;
 }
+
+.card-1{
+    transform: translateY(-10%)
+}
+.card-2{
+    transform: translateY(0%)
+}
+.card-3{
+    transform: translateY(+10%)
+}
+
+  #progressBar {
+    margin: 20px;
+    width: 400px;
+    height: 8px;
+    position: relative;
+  }

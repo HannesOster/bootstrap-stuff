@@ -108,8 +108,8 @@
         </button>
       </div>
     </section>
-    <section id="what-we-do">
-        <div class="section-content">
+    <section id="what-we-do" class="jumbotron">
+        <div class="section-content my-5">
             <div class="container">
                 <h2>What we do</h2>
                 <p class="lead">
@@ -119,20 +119,20 @@
         </div>
     </section>
     <section class="d-flex flex-wrap justify-content-center cards-section">
-        <div class="card mb-3" style="width: 18rem;">
+        <div class="card card-1 mb-3" style="width: 18rem;">
             <img src="img/working.jpg" class="card-img-top" alt="ipad">
             <div class="card-body">
                 <p class="card-text">A women doing her daily work. Super impressive.</p>
             </div>
         </div>
-        <div class="card mb-3" style="width: 18rem;">
+        <div class="card card-2 mb-3" style="width: 18rem;">
             <img src="img/banjo.jpg" class="card-img-top" alt="ipad">
             <div class="card-body">
                 <p class="card-text">Just a regular Banjo guy.</p>
                 
             </div>
         </div>
-        <div class="card mb-3" style="width: 18rem;">
+        <div class="card card-3 mb-3" style="width: 18rem;">
             <img src="img/computer.jpg" class="card-img-top" alt="ipad">
             <div class="card-body">
                 <p class="card-text"></p>
@@ -150,12 +150,9 @@
     <div class="alert alert-success " hidden role="alert">
         <h4 class="alert-heading">Well done!</h4>
     <p>Thank you so much for pushing the Progress till the End! Your hard work is now rewarded with the display of this alert box. </p>
-
-        
-        
       </div>
     </div>  
-    <div class="card container-sm mt-5">
+    <div class="card container-sm my-5">
         <div class="card-header">
           Super usefull button
         </div>
@@ -229,6 +226,26 @@
           </div>
         </div>
       </div>
+      <section class="row justify-content-center">
+        <div class="container-sm mb-5">
+            <div class="d-flex progress-section mt-4">
+                
+                <div id="progressBar"></div>
+            </div>
+            <div class="form-group mt-4">
+                <label for="platzInput">Platz in der Warteschlange:</label>
+                <input type="number" class="form-control" id="platzInput" placeholder="Enter Platz">
+            </div>
+            <div class="form-group">
+                <label for="laengeInput">Länge der Warteschlange:</label>
+                <input type="number" class="form-control" id="laengeInput" placeholder="Enter Länge">
+            </div>
+            <button type="button" class="btn btn-primary" id="startProcessBtn">Start Process</button>
+           
+        </div>
+    
+    </section>
+</div>
 
       <footer class="jumbotron">
         <h1 class="display-4">OKAY</h1>
